@@ -1,4 +1,4 @@
-FROM ubuntu:17.10
+FROM ubuntu:18.04
 MAINTAINER timiil@163.com
 
 RUN \
