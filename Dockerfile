@@ -1,7 +1,9 @@
 FROM ubuntu:18.04
 MAINTAINER timiil@163.com
 
-RUN \
+ENV TZ=Asia/Shanghai
+
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone && \
   apt-get update && \
   apt-get -y upgrade && \
   apt-get install -y build-essential asciidoc binutils bzip2 gawk gettext git libncurses5-dev libz-dev patch unzip zlib1g-dev && \
