@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM ubuntu:20.04
 MAINTAINER timiil@163.com
 
 ENV TZ=Asia/Shanghai
